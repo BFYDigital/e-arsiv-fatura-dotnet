@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace BFY.Fatura.Models
 {
-    public class DraftInvoiceResponseModel
+    public class GIBResponseModel<T>
     {
-        public string date { get; set; }
-        public string uuid { get; set; }
-        public string data { get; set; }
+        public T data { get; set; }
+        public MetaData metadata { get; set; }
     }
 
-    public class DraftInvoiceResponseMetaData
+    public class MetaData
     {
         public string optime { get; set; }
     }

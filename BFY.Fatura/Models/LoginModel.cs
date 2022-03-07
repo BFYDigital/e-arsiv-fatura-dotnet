@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BFY.Fatura.Models
 {
-    public class LoginModel: ILoginModel
+    public class LoginModel
     {
         public string Token { get; set; }
     }

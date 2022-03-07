@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BFY.Fatura.Models
 {
-    public class FaturaItemModel : IFaturaItemModel
+    public class FaturaItemModel
     {
         public string Name { get; set; }
         public int Quantity { get; set; }

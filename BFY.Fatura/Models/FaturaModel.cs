@@ -16,7 +16,7 @@ namespace BFY.Fatura.Models
         public string Name { get; set; }
         public string Surname { get; set; }
         public string FullAddress { get; set; }
-        public IList<IFaturaItemModel> Items { get; set; }
+        public List<FaturaItemModel> Items { get; set; }
         public decimal TotalVAT { get; set; }
         public decimal GrandTotal { get; set; }
         public decimal GrandTotalInclVAT { get; set; }

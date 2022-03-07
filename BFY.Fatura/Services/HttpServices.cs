@@ -16,6 +16,10 @@ namespace BFY.Fatura.Services
         public HttpServices(IFaturaServiceConfiguration configuration)
         {
             Configuration = configuration;
+            if(configuration.ServiceType == ServiceType.Prod)
+                Configuration.BaseUrl = "https://earsivportal.efatura.gov.tr";
+            else
+                Configuration.BaseUrl = "https://earsivportaltest.efatura.gov.tr";
         }
 
         public async Task<T> Login()

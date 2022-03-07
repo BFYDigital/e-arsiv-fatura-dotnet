@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
+﻿
+using System.Collections.Generic;
 
 namespace BFY.Fatura.Models
 {
-    public class InvoiceDetailsModel : IInvoiceDetailsModel
+    public class InvoiceDetailsModel
     {
-        public IList<IInvoiceDetailsItemModel> items { get; set; }
         public string date { get; set; }
         public string time { get; set; }
         public string taxIDOrTRID { get; set; }
@@ -17,10 +17,6 @@ namespace BFY.Fatura.Models
         public decimal grandTotal { get; set; }
         public decimal grandTotalInclVAT { get; set; }
         public decimal paymentTotal { get; set; }
-
-        public InvoiceDetailsModel()
-        {
-            items = new List<IInvoiceDetailsItemModel>();
-        }
+        public List<InvoiceDetailsItemModel> items { get; set; }
     }
 }
