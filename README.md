@@ -9,9 +9,6 @@
 - [Başlangıç](#getting_started)
 - [Ayarlar](#configuring)
 - [Kullanım](#usage)
-- [Fatura Oluşturma](#create)
-- [Fatura HTML Görüntüleme](#gethtml)
-- [Fatura İndirme](#download)
 
 ## Hakkında <a name = "about"></a>
 
